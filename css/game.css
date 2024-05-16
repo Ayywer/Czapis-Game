@@ -1,0 +1,92 @@
+.game-container {
+    position: relative;
+
+    height: 69vh;
+    width: 190vh;
+    left: 27%;
+    bottom: 5vh;
+
+    background-color: #ffffff;
+    padding: 21px;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgba(39, 39, 39, 0.1);
+}
+
+.image-button {
+    position: relative;
+    
+    width: 336px; /* Adjust the size as needed */
+    height: 306px; /* Adjust the size as needed */
+    
+    background: url('../cats/CommonCat/Ccat.png') no-repeat center center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+
+    left: 75vh;
+    top: 16vh;
+}
+
+#cat-name {
+    position: relative;
+
+    bottom: 32vh;
+    left: 83.7vh;
+
+    text-align:left;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+}
+
+#rarity {
+    position: relative;
+
+    bottom: 32vh;
+    left: 87vh;
+
+    color: rarity-color;
+
+    text-align:left;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+#cat-count {
+    position: relative;
+
+    bottom: 12vh;
+    left: 105vh;
+
+    text-align:left;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+}
+
+.health {
+    position: relative;
+
+    height: 0.7vh;
+    width: 23vh;
+
+    top: 4vh;
+    left: 79vh;
+
+    background-color: #ff0000;
+    padding: 20px;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cat-health {
+    position: relative;
+
+    bottom: 4vh;
+    left: 6vh;
+
+    text-align:left;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+}
