@@ -68,10 +68,10 @@
     position: relative;
 
     height: 0.7vh;
-    width: 23vh;
+    width: 34vh;
 
     top: 4vh;
-    left: 79vh;
+    left: 74vh;
 
     background-color: #ff0000;
     padding: 20px;
@@ -84,7 +84,7 @@
     position: relative;
 
     bottom: 4vh;
-    left: 6vh;
+    left: 12vh;
 
     text-align:left;
     font-size: 35px;
