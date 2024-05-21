@@ -6,7 +6,7 @@ function getCookie(name) {
 
 export let level = parseInt(localStorage.getItem("level")) || 1;
 export let exp = parseInt(localStorage.getItem("exp")) || 0;
-export let Maxexp = parseInt(localStorage.getItem("Maxexp")) || 100;
+export let Maxexp = parseInt(localStorage.getItem("Maxexp")) || 10;
 export let money = parseInt(localStorage.getItem("money")) || 0;
 export let clickUpgrade = parseInt(localStorage.getItem("clickUpgrade")) || 1;
 
@@ -22,24 +22,43 @@ let ExpElement = document.getElementById("exp")
 
 moneyElement.textContent = money;
 LevelElement.textContent = level;
-ExpElement.textContent = exp;
+ExpElement.textContent = (`${exp}/${Maxexp}`)
 
-function saveProgress() {
-    document.cookie = `score=${score}; max-age=${60 * 60 * 24 * 365}`; // Zapisanie liczby punktów na rok
-    document.cookie = `multiplier=${multiplier}; max-age=${60 * 60 * 24 * 365}`; // Zapisanie mnożnika na rok
-    
+export function saveProgress() {
+    document.cookie = `level=${level}; max-age=${60 * 60 * 24 * 365}`; // Zapisanie liczby punktów na rok
+    document.cookie = `exp=${exp}; max-age=${60 * 60 * 24 * 365}`; // Zapisanie mnożnika na rok
+    document.cookie = `Maxexp=${Maxexp}; max-age=${60 * 60 * 24 * 365}`;
+    document.cookie = `money=${money}; max-age=${60 * 60 * 24 * 365}`;
+    document.cookie = `clickUpgrade=${clickUpgrade}; max-age=${60 * 60 * 24 * 365}`;
+ 
     localStorage.setItem("level", level);
     localStorage.setItem("exp", exp);
     localStorage.setItem("Maxexp", Maxexp);
     localStorage.setItem("money", money);
     localStorage.setItem("clickUpgrade", clickUpgrade);
+
+    LevelElement.textContent = level;
+    ExpElement.textContent = (`${exp}/${Maxexp}`)
 }
 
-function nextLevel() {
-    if(exp >= Maxexp) {
-        exp = 0;
-        Maxexp += 100 * level;
+export function SetExp(value)
+{
+    exp += value;
+    localStorage.setItem("exp", exp);
+    CheckNextLevel();
+    ExpElement.textContent = (`${exp}/${Maxexp}`)
+}
+
+export function CheckNextLevel() {
+    if(exp > Maxexp || exp == Maxexp) {
         level += 1;
+        exp -= Maxexp;
+        Maxexp += 10 * level;
+
+        localStorage.setItem("level", level);
+        localStorage.setItem("exp", exp);
+        localStorage.setItem("Maxexp", Maxexp);
+
         saveProgress();
     }
 }
