@@ -19,7 +19,6 @@
     width: 336px; /* Adjust the size as needed */
     height: 306px; /* Adjust the size as needed */
     
-    background: url('../cats/CommonCat/Ccat.png') no-repeat center center;
     background-size: cover;
     border: none;
     cursor: pointer;
