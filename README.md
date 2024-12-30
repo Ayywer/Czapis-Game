@@ -4,7 +4,7 @@ Silly little clicker game about catching cats!
 Made on Electron using JavaScript
 
 # This is a DEMO!
-I've always wanted to create a game like this, and finally found a nice and easy way to make this work. But it's only sort of a "demo". Full version will look and feel completly diffrently
+I've always wanted to create a game like this, and finally found a nice and easy way to make this work. But it's only sort of a "demo". Full version will look and feel completly diffrently.
 this is just a showcase of what I've been doing for past week. Code of this game is absolute mess, but it's open source, so if you want to make yourself a change, go for it. No need for credits!
 
 ### It's very simple: You click cats, they give you money!
