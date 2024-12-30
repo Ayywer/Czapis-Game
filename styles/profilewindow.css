@@ -1,0 +1,127 @@
+#profile-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+}
+
+#profile-window.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.profile-content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  animation: slideDown 0.3s ease;
+  overflow-y: auto;
+
+}
+
+.profile-content h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #444;
+  font-size: 24px;
+
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+#profile-player-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.profile-player-details label {
+  font-weight: bold;
+  color: #444;
+}
+
+#profile-player-name {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#save-name {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#save-name:hover {
+  background-color: #45a049;
+}
+
+.player-stats {
+  margin-top: 20px;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+#close-profile {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+  animation: InvfadeOut 0.2s ease-in;
+}
+
+#close-profile:hover {
+  color: #333;
+}
+
+/* Animacja otwierania okna */
+@keyframes slideDown {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

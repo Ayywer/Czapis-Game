@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a88a80;
+  color: black;
+}
+
+.game-container {
+  max-width: 1220px;
+  margin: 150px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+}
+
+.left-panel,
+.right-panel {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-panel .map {
+  background-color: #00d1d1;
+  border: 2px solid black;
+  height: 200px;
+}
+
+.map {
+  justify-content: center;
+  align-items: center;
+}
+
+.action-button {
+  background-color: #ccff33;
+  border: 2px solid black;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#forest-button,
+#town-button {
+  margin: 50px auto;
+  display: flex;
+}
+
+.action-button:hover {
+  background-color: #b8e629;
+}
+
+.game-panel {
+  width: 60%;
+  background-image: url('../assets/Backgrounds/forest.png');
+  background-size: cover;
+  border: 2px solid black;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cat-info {
+  text-align: center;
+  display: inline;
+}
+
+.rarity {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  color: grey;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.cat-button {
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  display: flex;
+  background-size: cover;
+}
+
+.health-bar-container {
+  margin-top: 10px;
+}
+
+.health-bar {
+  width: 40%;
+  height: 20px;
+  background: red;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  margin: 10px auto 0 auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.health-bar span {
+  position: relative;
+  font-size: 14px;
+}
+
+.right-panel .player-info,
+.timers {
+  background-color: #00d1d1;
+  border: 2px solid black;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.player-image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.extra-section p {
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}

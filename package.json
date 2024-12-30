@@ -1,0 +1,16 @@
+{
+  "name": "czapis-game",
+  "version": "1.0.0",
+  "description": "cat based clicker game!",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Aywer",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^33.2.1",
+    "node.js": "^0.0.1-security"
+  }
+}
