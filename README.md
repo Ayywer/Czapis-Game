@@ -1,7 +1,7 @@
 # Czapis Game
 
-## Silly little clicker game about catching cats!
-## Made on Electron using JavaScript
+Silly little clicker game about catching cats!
+Made on Electron using JavaScript
 
 # This is a DEMO!
 I've always wanted to create a game like this, and finally found a nice and easy way to make this work. But it's only sort of a "demo". Full version will look and feel completly diffrently
