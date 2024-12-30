@@ -14,7 +14,7 @@ If you find any bugs, please don't report them. I will not work on this demo any
 
 ## Setup
  - Windows
-  1.Install node.js with [this][https://nodejs.org/en]
+  1.Install node.js with [this](https://nodejs.org/en)
   2.Open app with "start.bat" file
    if you want to change code make sure to install electron in game dir file using ``npm install electron`` in terminal 
  - Linux and MacOS
