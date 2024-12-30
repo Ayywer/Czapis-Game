@@ -13,7 +13,7 @@ Buy items and upgrades, find all cats and catch them!
 If you find any bugs, please don't report them. I will not work on this demo anymore. It's just a showcase of what game could have been.
 
 ## Setup
- - Windows
+ - Windows <br />
   1.Install node.js with [this](https://nodejs.org/en) <br />
   2.Open app with "start.bat" file <br />
    if you want to change code make sure to install electron in game dir file using ``npm install electron`` in terminal 
