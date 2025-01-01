@@ -1,4 +1,4 @@
-[[# Czapis Game
+# Czapis Game
 
 Silly little clicker game about catching cats!
 Made on Electron using JavaScript
