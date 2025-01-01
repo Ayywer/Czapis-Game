@@ -22,7 +22,7 @@ if you want to change code make sure to install electron in game dir file using 
 - Linux and MacOS <br />
 1. Open terminal with folder path <br />
 2. Make sure you that ``start.sh`` has executable permissions. (``chmod +x start.sh``) <br />
-3. Same with Windows, Install node.js with [this](https://nodejs.org/en) <br /> if you don't have <br />
+3. Same with Windows, Install node.js with [this](https://nodejs.org/en) if you don't have <br />
 4. Run ``./start.sh`` <br />
 
 Fixing instruction: <br />
