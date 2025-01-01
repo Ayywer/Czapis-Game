@@ -18,7 +18,9 @@ If you find any bugs, please don't report them. I will not work on this demo any
   2.Open app with "start.bat" file <br />
    if you want to change code make sure to install electron in game dir file using ``npm install electron`` in terminal 
  - Linux and MacOS
-   Coming soon!
+  1. Open terminal with folder path
+  2. Make sure you that ``start.sh`` has executable permissions. (``chmod +x start.sh``)
+  3. Run ``./start.sh``
 
 ## Having other issues? Send me a message on discord: ayywer
 Peace <3
