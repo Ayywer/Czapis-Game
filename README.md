@@ -16,7 +16,7 @@ If you find any bugs, please don't report them. I will not work on this demo any
 - Windows <br />
 1.Install node.js with [this](https://nodejs.org/en) <br />
 2.Open app with "start.bat" file <br />
-if you want to change code make sure to install electron in game dir file using ``npm install electron`` in terminal
+if you want to change code make sure to install electron in game dir file using ``npm install electron`` in terminal <br />
 - Linux and MacOS
 1. Open terminal with folder path
 2. Make sure you that ``start.sh`` has executable permissions. (``chmod +x start.sh``)
